@@ -128,14 +128,14 @@ namespace Whoaverse.Controllers
         {
             if (!ModelState.IsValid) return View(model);
             // begin recaptcha check
-            const string captchaMessage = "";
-            var isCaptchaCodeValid = ReCaptchaUtility.GetCaptchaResponse(captchaMessage, Request);
+            //const string captchaMessage = "";
+            //var isCaptchaCodeValid = ReCaptchaUtility.GetCaptchaResponse(captchaMessage, Request);
 
-            if (!isCaptchaCodeValid)
-            {
-                ModelState.AddModelError("", "Incorrect recaptcha answer.");
-                return View();
-            }
+            //if (!isCaptchaCodeValid)
+            //{
+            //    ModelState.AddModelError("", "Incorrect recaptcha answer.");
+            //    return View();
+            //}
             // end recaptcha check
 
             try

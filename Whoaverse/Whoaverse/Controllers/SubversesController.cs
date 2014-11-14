@@ -119,19 +119,19 @@ namespace Whoaverse.Controllers
         {
             if (!User.Identity.IsAuthenticated) return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             // verify recaptcha if user has less than 25 CCP
-            if (Karma.CommentKarma(User.Identity.Name) < 25)
-            {
-                // begin recaptcha check
-                const string captchaMessage = "";
-                var isCaptchaCodeValid = ReCaptchaUtility.GetCaptchaResponse(captchaMessage, Request);
+            //if (Karma.CommentKarma(User.Identity.Name) < 25)
+            //{
+            //    // begin recaptcha check
+            //    const string captchaMessage = "";
+            //    var isCaptchaCodeValid = ReCaptchaUtility.GetCaptchaResponse(captchaMessage, Request);
 
-                if (!isCaptchaCodeValid)
-                {
-                    ModelState.AddModelError("", "Incorrect recaptcha answer.");
-                    return View();
-                }
-                // end recaptcha check
-            }
+            //    if (!isCaptchaCodeValid)
+            //    {
+            //        ModelState.AddModelError("", "Incorrect recaptcha answer.");
+            //        return View();
+            //    }
+            //    // end recaptcha check
+            //}
 
             try
             {
