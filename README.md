@@ -1,3 +1,7 @@
+>upd. was forked for this [ideat](https://docs.google.com/document/d/15AWkHvNfvMFPtzHmlAuXHDIcmv9Gtk3nYwlxfmbmXbI/edit?usp=sharing)
+
+
+
 # WhoaVerse
 
 <img height="200" width="200" src="http://whoaverse.com/Graphics/whoaverse-mascot.png"
